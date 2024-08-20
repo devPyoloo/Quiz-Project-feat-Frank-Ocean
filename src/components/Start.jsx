@@ -1,8 +1,15 @@
 import { useContext, useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import Feedback from "./Feedbacks";
 import { FcCheckmark, FcCancel } from "react-icons/fc";
 import { useNavigate, useParams } from "react-router-dom";
 import { QuizContext } from "../Context/QuizProvider";
+
+const transitionVariants = {
+  initial: { opacitu: 0, x: 100 },
+  enter: { opacitu: 1, x: 0, transition: { duration: 0.3 } },
+  exit: { opacitu: 0, x: 100, transition: { duration: 0.3 } },
+};
 
 export default function StartQuiz() {
   const [showFeedBack, setShowFeedback] = useState(false);
@@ -90,10 +97,17 @@ export default function StartQuiz() {
     correctIndex: correct_index,
     fact,
     currentQuestionIndex,
-  }
+  };
 
   return (
-    <div className="relative mx-auto items-center justify-center flex flex-col mt-20">
+    <motion.div
+      className="relative mx-auto items-center justify-center flex flex-col mt-20"
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      variants={transitionVariants}
+      key={id}
+    >
       <div className="relative mx-10 md:mx-10 py-5 px-8 flex items-center md:gap-10 bg-wood mb-20 md:px-8 md:py-6 md:w-1/2 rounded-xl drop-shadow border-b-8 border-darkwood">
         <span className="absolute md:text-lg text-neutral-700 font-bold right-5 top-5 p-1 rounded-full hidden md:block">
           {id} / {questions.length}
@@ -117,7 +131,7 @@ export default function StartQuiz() {
                 ? "bg-green-500 text-white"
                 : ""
             } ${
-              selectedAnswer !== null &&  
+              selectedAnswer !== null &&
               index === selectedAnswer &&
               index !== correct_index
                 ? "bg-red-500 text-white"
@@ -149,8 +163,12 @@ export default function StartQuiz() {
         ))}
       </div>
 
-      <Feedback feedbackData={feedbackData} onNextQuestion={handleNextQuestion} onPrevQuestion={handlePrevQuestion} resultRef={resultRef}
+      <Feedback
+        feedbackData={feedbackData}
+        onNextQuestion={handleNextQuestion}
+        onPrevQuestion={handlePrevQuestion}
+        resultRef={resultRef}
       />
-    </div>
+    </motion.div>
   );
 }

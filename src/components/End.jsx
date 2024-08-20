@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Confetti from './Confetti'
 
 export const End = () => {
-  const { quizState } = useContext(QuizContext);
-  const score = 6;
+  const { quizState, score } = useContext(QuizContext);
   const totalQuestions = quizState.questions.length;
   const percentage = (score / totalQuestions) * 100;
   const radius = 16;
@@ -23,7 +22,7 @@ export const End = () => {
 
   return (
     <>
-    <Confetti />
+    { percentage >= 50 && <Confetti /> }
     <div className="relative mx-auto items-center justify-center flex flex-col mt-20">
       <div className="w-4/5 flex flex-col pt-10 items-center justify-center gap-6 md:gap-10 bg-lightwood mb-20 py-6 md:w-1/2 rounded-xl drop-shadow-2xl border-b-8 px-10 border-darkwood">
         {percentage >= 50 ? (
