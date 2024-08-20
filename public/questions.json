@@ -8,7 +8,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean was born as Christopher Edwin Breaux on October 28, 1987. He later adopted the stage name 'Frank Ocean' for his music career.",
-      "img": "../src/assets/young frank ocean.jpg"
+      "img": "/assets/young frank ocean.jpg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean joined the hip hop collective Odd Future in 2010, which helped him gain more exposure in the music industry.",
-      "img": "../src/assets/sec_q.jpg"
+      "img": "/assets/sec_q.jpg"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean released his first mixtape, Nostalgia, Ultra, in 2011. This mixtape garnered critical acclaim and helped him secure a recording contract with Def Jam Recordings.",
-      "img": "../src/assets/third_q.jpg"
+      "img": "/assets/third_q.jpg"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "After the release of Nostalgia, Ultra, Frank Ocean signed a recording contract with Def Jam Recordings, a prominent American record label.",
-      "img": "../src/assets/fourth_q.jpg"
+      "img": "/assets/fourth_q.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Channel Orange, Frank Ocean's first studio album, incorporates R&B and soul styles, showcasing his eclectic musical influences.",
-      "img": "../src/assets/fifth_q.jpg"
+      "img": "/assets/fifth_q.jpg"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean has won two Grammy Awards, including Best Urban Contemporary Album for Channel Orange.",
-      "img": "../src/assets/sixth_q.jpg"
+      "img": "/assets/sixth_q.jpg"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Time magazine named Frank Ocean as one of the world's most influential people in 2013, recognizing his impact on the music industry.",
-      "img": "../src/assets/seventh_q.jpg"
+      "img": "/assets/seventh_q.jpg"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean released a visual album titled Endless in 2016 to fulfill contractual obligations with Def Jam Recordings.",
-      "img": "../src/assets/eigth_q.jpg"
+      "img": "/assets/eigth_q.jpg"
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean's second studio album, Blonde, ranked first on Pitchfork's list of the best albums of the 2010s decade, showcasing his continued musical innovation.",
-      "img": "../src/assets/ninth_q.jpg"
+      "img": "/assets/ninth_q.jpg"
     },
     {
       "id": 10,
@@ -98,7 +98,7 @@
       "correct_feedback": ["You did it!", "Great job!", "Spot on! Keep it up.", "You got it! Well done.", "I couldn’t have done it better myself.", "Perfect! You know your stuff.", "Excellent! You nailed it."],
       "wrong_feedback": ["Sorry, that's not right.", "Incorrect, but don’t give up!", "Wrong answer, but keep trying!", "Not correct, but you’re learning!", "Don’t worry, you’ll get the next one.", "Nope, that’s not it.", "That’s not the correct answer."],
       "fact": "Frank Ocean launched a fashion brand called Homer, expanding his creative pursuits beyond music.",
-      "img": "../src/assets/tenth_q.jpeg"
+      "img": "/assets/tenth_q.jpeg"
     }
   ] 
 }
