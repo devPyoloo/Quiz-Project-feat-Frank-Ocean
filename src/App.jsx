@@ -9,7 +9,7 @@ export default function App() {
     <QuizProvider>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/question/:id" element={<StartQuiz />} />
           <Route path="/end" element={<End />} />
         </Routes>
