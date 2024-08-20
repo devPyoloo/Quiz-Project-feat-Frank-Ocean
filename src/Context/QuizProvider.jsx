@@ -14,7 +14,7 @@ export const QuizProvider = ({children}) => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch("../data/questions.json");
+        const response = await fetch("/questions.json");
         if (!response.ok) {
           throw new Error("Failed to fetch questions");
         }
