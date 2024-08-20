@@ -101,7 +101,7 @@ export default function StartQuiz() {
 
   return (
     <motion.div
-      className="relative mx-auto items-center justify-center flex flex-col mt-20"
+      className="relative mx-auto items-center justify-center flex flex-col mt-32"
       initial="initial"
       animate="enter"
       exit="exit"

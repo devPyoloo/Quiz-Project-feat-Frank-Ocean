@@ -31,7 +31,7 @@ export default function Home() {
 </div>
 
 <img
-  className="md:w-1/3 h-auto fixed bottom-0 -left-14 w-4/5 drop-shadow-2xl"
+  className="md:w-1/3 h-auto fixed bottom-0 -left-14 w-6/12 drop-shadow-2xl"
   src={FrontImg}
   alt="Frank Ocean Photo"/>
  </>

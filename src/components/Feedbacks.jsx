@@ -23,7 +23,7 @@ const Feedbacks = ({
     <>
       <div
         ref={resultRef}
-        className={`w-3/4 mb-10 rounded-xl md:w-1/2 drop-shadow-2xl mt-20 bg-white shadow-sm p-5 border-b-8 ${
+        className={`w-3/4 mb-10 rounded-xl md:w-1/2 drop-shadow-2xl mt-16 bg-white shadow-sm p-5 border-b-8 ${
           selectedAnswer === correctIndex
             ? "border-b-green-600"
             : "border-b-red-600"
