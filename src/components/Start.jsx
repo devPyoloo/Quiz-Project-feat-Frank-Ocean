@@ -126,7 +126,7 @@ export default function StartQuiz() {
         {choices.map((choice, index) => (
           <button
             onClick={() => handleSelectedChoice(index)}
-            className={`text-black font-semibold rounded-full md:text-lg md:px-10 py-4 cursor-pointer border-2 flex items-center justify-center md:justify-evenly hover:border-gray-500 ${
+            className={`text-black font-semibold rounded-full gap-10 md:text-lg md:px-10 py-4 cursor-pointer border-2 flex items-center justify-center md:justify-evenly hover:border-gray-500 ${
               selectedAnswer !== null && index === correct_index
                 ? "bg-green-500 text-white"
                 : ""
