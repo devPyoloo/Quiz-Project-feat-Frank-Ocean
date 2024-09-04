@@ -117,7 +117,7 @@ export default function StartQuiz() {
         img={img}
       />
 
-      <QuestionChoices choices={choices} handleSelectedChoice={handleSelectedChoice} selectedAnswer={selectedAnswer} correct_index={correct_index} showFeedBack={showFeedBack} />
+      <QuestionChoices choices={choices} handleSelectedChoice={handleSelectedChoice} selectedAnswer={selectedAnswer} correctIndex={correct_index} showFeedBack={showFeedBack} />
 
       <Feedback
         feedbackData={feedbackData}
