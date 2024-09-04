@@ -5,7 +5,7 @@ import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 import Confetti from './Confetti'
 
-export const End = () => {
+export default function End() {
   const { quizState, score } = useContext(QuizContext);
   const totalQuestions = quizState.questions.length;
   const percentage = (score / totalQuestions) * 100;

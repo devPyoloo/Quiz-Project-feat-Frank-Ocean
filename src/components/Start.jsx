@@ -20,6 +20,7 @@ export default function StartQuiz() {
   const navigate = useNavigate();
   const { id } = useParams();
 
+
   const currentQuestionIndex = quizState.questions.findIndex(
     (q) => q.id === parseInt(id)
   );
