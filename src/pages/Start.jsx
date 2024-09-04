@@ -1,7 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Feedback from "../components/Feedbacks";
-import { FcCheckmark, FcCancel } from "react-icons/fc";
 import { useNavigate, useParams } from "react-router-dom";
 import { QuizContext } from "../Context/QuizProvider";
 import QuestionCard from "../components/QuestionCard";

@@ -13,7 +13,6 @@ export default {
     },
     extend: {
       colors: {
-        offWhite:'#FAF9F6',
         greenish: '#1B7D13',
         light: 'rgb(249, 246, 239)',
         lightwood: 'rgb(249, 246, 239)',
