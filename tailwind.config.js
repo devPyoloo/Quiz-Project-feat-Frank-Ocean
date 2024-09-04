@@ -14,11 +14,6 @@ export default {
     extend: {
       colors: {
         offWhite:'#FAF9F6',
-        eggShell: '#FFF9E3',
-        aliceBlue: '#F0F8FF',
-        pearl: '#FBFCF8',
-        coconut: '#FFF1E6',
-        parchment: '#FBF5DF',
         greenish: '#1B7D13',
         light: 'rgb(249, 246, 239)',
         lightwood: 'rgb(249, 246, 239)',

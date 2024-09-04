@@ -22,7 +22,7 @@ export default function Home() {
   </p>
 
   <div className="items-center justify-center flex mt-20">
-    <Link to="/question/1">
+    <Link to="question/1">
     <button className="text-2xl md:text-4xl text-offWhite font-bold bg-greenish px-8 py-4 rounded-full text-center outline-none drop-shadow-lg hover:bg-green-800">
       Start the Quiz!
     </button>
@@ -33,7 +33,10 @@ export default function Home() {
 <img
   className="md:w-1/3 h-auto fixed bottom-0 -left-14 w-6/12 drop-shadow-2xl"
   src={FrontImg}
-  alt="Frank Ocean Photo"/>
+  alt="Frank Ocean Photo"
+  loading='lazy'
+  />
+  
  </>
  )
 }
