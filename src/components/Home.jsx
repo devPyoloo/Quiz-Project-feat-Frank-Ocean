@@ -23,7 +23,7 @@ export default function Home() {
 
   <div className="items-center justify-center flex mt-20">
     <Link to="question/1">
-    <button className="text-2xl md:text-4xl text-offWhite font-bold bg-greenish px-8 py-4 rounded-full text-center outline-none drop-shadow-lg hover:bg-green-800">
+    <button className="text-2xl md:text-4xl text-gray-200 font-bold bg-greenish px-8 py-4 rounded-full text-center outline-none drop-shadow-lg hover:bg-green-800">
       Start the Quiz!
     </button>
     </Link>
