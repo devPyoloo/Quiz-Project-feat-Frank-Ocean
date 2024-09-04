@@ -3,7 +3,7 @@ import { QuizContext } from "../Context/QuizProvider";
 import { FaRedoAlt, FaThumbsUp } from "react-icons/fa";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
-import Confetti from './Confetti'
+import Confetti from '../components/Confetti'
 
 export default function End() {
   const { quizState, score } = useContext(QuizContext);

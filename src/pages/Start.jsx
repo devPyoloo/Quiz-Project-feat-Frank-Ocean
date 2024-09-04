@@ -1,9 +1,11 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Feedback from "./Feedbacks";
+import Feedback from "../components/Feedbacks";
 import { FcCheckmark, FcCancel } from "react-icons/fc";
 import { useNavigate, useParams } from "react-router-dom";
 import { QuizContext } from "../Context/QuizProvider";
+import QuestionCard from "../components/QuestionCard";
+import QuestionChoices from "../components/QuestionChoices";
 
 const transitionVariants = {
   initial: { opacitu: 0, x: 100 },
@@ -19,7 +21,6 @@ export default function StartQuiz() {
   const resultRef = useRef(null);
   const navigate = useNavigate();
   const { id } = useParams();
-
 
   const currentQuestionIndex = quizState.questions.findIndex(
     (q) => q.id === parseInt(id)
@@ -109,60 +110,14 @@ export default function StartQuiz() {
       variants={transitionVariants}
       key={id}
     >
-      <div className="relative mx-10 md:mx-10 py-5 px-8 flex items-center md:gap-10 bg-wood mb-20 md:px-8 md:py-6 md:w-1/2 rounded-xl drop-shadow border-b-8 border-darkwood">
-        <span className="absolute md:text-lg text-neutral-700 font-bold right-5 top-5 p-1 rounded-full hidden md:block">
-          {id} / {questions.length}
-        </span>
-        <img
-          src={img}
-          className="w-48 h-auto rounded-xl hidden md:block"
-          alt="Frank Ocean Photo"
-        />
-        <p className="font-bold text-xl font-serif text-center text-gray-800">
-          {question}
-        </p>
-      </div>
+      <QuestionCard
+        id={id}
+        questions={questions}
+        question={question}
+        img={img}
+      />
 
-      <div className="grid w-full md:w-auto px-5 grid-cols-1 md:grid-cols-2 gap-3 relative">
-        {choices.map((choice, index) => (
-          <button
-            onClick={() => handleSelectedChoice(index)}
-            className={`text-black font-semibold rounded-full gap-10 md:text-lg md:px-10 py-4 cursor-pointer border-2 flex items-center justify-center md:justify-evenly hover:border-gray-500 ${
-              selectedAnswer !== null && index === correct_index
-                ? "bg-green-500 text-white"
-                : ""
-            } ${
-              selectedAnswer !== null &&
-              index === selectedAnswer &&
-              index !== correct_index
-                ? "bg-red-500 text-white"
-                : ""
-            }`}
-            key={index}
-            disabled={showFeedBack}
-          >
-            {choice}
-            <div className="ml-3 w-10 flex justify-center items-center">
-              <FcCheckmark
-                className={`text-4xl bg-white rounded-full p-1 ${
-                  selectedAnswer !== null && index === correct_index
-                    ? "visible"
-                    : "hidden"
-                }`}
-              />
-              <FcCancel
-                className={`text-4xl bg-white rounded-full p-1 ${
-                  selectedAnswer !== null &&
-                  index === selectedAnswer &&
-                  index !== correct_index
-                    ? "visible"
-                    : "hidden"
-                }`}
-              />
-            </div>
-          </button>
-        ))}
-      </div>
+      <QuestionChoices choices={choices} handleSelectedChoice={handleSelectedChoice} selectedAnswer={selectedAnswer} correct_index={correct_index} showFeedBack={showFeedBack} />
 
       <Feedback
         feedbackData={feedbackData}
